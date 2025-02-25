@@ -20,3 +20,7 @@ def get_nutrition(food: str):
     
     # Return the API response as JSON
     return response.json()
+
+@app.get("/hello")
+def read_root():
+    return {"message": "Hello World"}
